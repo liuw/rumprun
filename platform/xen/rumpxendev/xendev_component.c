@@ -57,6 +57,7 @@ static const struct xen_dev_info {
 	[cmin] = { path, component##_dev_init, component##_dev_open,	\
 		   &component##_dev_fileops }
 	XDEV(0, DEV_XEN "/xenbus", xenbus),
+	XDEV(1, "/dev/xenevt", xenevt),
 #undef XDEV
 };
 
