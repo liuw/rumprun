@@ -871,6 +871,8 @@ xenbus_dev_close(struct file *fp)
 	return 0;
 }
 
+void xenbus_dev_init(void) {}
+
 const struct fileops xenbus_dev_fileops = {
         .fo_read = xenbus_dev_read,
         .fo_write = xenbus_dev_write,

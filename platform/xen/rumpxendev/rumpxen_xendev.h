@@ -56,6 +56,7 @@
 /* Device operations, for devs table in rump_dev_xen.c */
 
 extern int xenbus_dev_open(struct file *fp, void **fdata);
+extern void xenbus_dev_init(void);
 extern const struct fileops xenbus_dev_fileops;
 
 
