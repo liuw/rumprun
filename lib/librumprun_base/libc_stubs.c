@@ -52,6 +52,8 @@
 	return ENOTSUP;}
 
 STUB_SILENT_IGNORE(__sigaction_sigtramp);
+STUB_SILENT_IGNORE(sigaction);
+STUB_SILENT_IGNORE(sigprocmask);
 
 STUB_RETURN(posix_spawn);
 
