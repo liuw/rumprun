@@ -44,7 +44,7 @@
 #define container_of(p, stype, field) ((stype *)(((uint8_t *)(p)) - offsetof(stype, field)))
 #endif
 
-//#define RUMP_DEV_XEN_DEBUG 1
+#define RUMP_DEV_XEN_DEBUG 1
 
 #ifdef RUMP_DEV_XEN_DEBUG
 #define DPRINTF(a) (printf a)
